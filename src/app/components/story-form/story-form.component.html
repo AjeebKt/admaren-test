@@ -1,0 +1,19 @@
+<div class="container">
+  <form (ngSubmit)="addStory()" class="story-form">
+    <h1>Add story form</h1>
+    <div>
+      <label>Story Name:</label>
+      <input class="form-control" [(ngModel)]="storyName" name="storyName" required />
+    </div>
+    <div>
+      <label>Story Points:</label>
+      <input class="form-control" type="number" [(ngModel)]="storyPoints" name="storyPoints" required min="1" />
+    </div>
+    <div>
+      <label>Story Description:</label>
+      <textarea class="form-control" [(ngModel)]="description" name="description" required></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Add Story</button>
+    <div *ngIf="error" class="error">{{ error }}</div>
+  </form>
+</div>

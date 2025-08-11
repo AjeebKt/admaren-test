@@ -1,0 +1,10 @@
+.story-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}

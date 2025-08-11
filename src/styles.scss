@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.story-box {
+    border: 1px solid #46325e;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 12px;
+    background-color: #46325e;
+    color: #fff;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
