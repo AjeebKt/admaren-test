@@ -9,6 +9,11 @@ import { StoryService, Story } from '../../services/story.service';
 export class AutoSelectedSprintComponent {
   constructor(public storyService: StoryService) {}
 
+  stories: { name: string; points: number; description: string }[] = [];
+
+  addStory(name: string, points: number, description: string): void {
+    this.stories.push({ name, points, description });
+  }
   get selectedStories(): Story[] {
     return this.storyService.getSelectedStories();
   }

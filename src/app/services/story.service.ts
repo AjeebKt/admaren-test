@@ -9,12 +9,12 @@ export interface Story {
 @Injectable({ providedIn: 'root' })
 export class StoryService {
   private stories: Story[] = [
-    { name: 'Story one', points: 32, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-    { name: 'Story two', points: 8, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-    { name: 'Story three', points: 5, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-    { name: 'Story four', points: 32, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-    { name: 'Story five', points: 8, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
-    { name: 'Story six', points: 5, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    { name: 'Login Feature', points: 2, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    { name: 'Dashboard Feature', points: 3, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    { name: 'API Integration', points: 5, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    { name: 'UI Design', points: 6, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    { name: 'Database Setup', points: 9, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
+    // { name: 'Story six', points: 5, description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' },
   ];
   private selectedStories: Story[] = [];
   private sprintCapacity = 0;
